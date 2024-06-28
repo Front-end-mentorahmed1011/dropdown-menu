@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>dropdown nav model</title>
+</head>
+<body>
+    <div class="nav">
+        <div class="lists">
+            <ul class="primary">
+                <li class="logo">snap</li>
+                <li>
+                    Features 
+                    <button id="features-btn" onclick="dropdown('features-dropdown')">
+                        <img src="icon-arrow-down.svg">
+                    </button>
+                    <ul id="features-dropdown" class="hide dropdown-menu">
+                        <li><img src="icon-todo.svg"> Todo List</li>
+                        <li><img src="icon-calendar.svg"> Calendar</li>
+                        <li><img src="icon-reminders.svg"> Reminders</li>
+                        <li><img src="icon-planning.svg"> Planning</li>
+                    </ul>
+                </li>
+                <li>
+                    Company 
+                    <button id="company-btn" onclick="dropdown('company-dropdown')">
+                        <img src="icon-arrow-down.svg">
+                    </button>
+                    <ul id="company-dropdown" class="hide dropdown-menu">
+                        <li>History</li>
+                        <li>Our Team</li>
+                        <li>Blog</li>
+                    </ul>
+                </li>
+                <li>Careers</li>
+                <li>About</li>
+            </ul>
+        </div>
+        <div class="auth">
+            <div>
+                <button>login</button>
+            </div>
+            <div>
+                <button class="border">Register</button>
+            </div>
+        </div>
+    </div>
+    <section>
+        <div class="sec1">
+            <h1>Make remote work</h1>
+            <p>Get your team in sync, no matter your location. Streamline processes, 
+                create team rituals, and watch productivity soar.</p>
+                <button id="learn"><a href="#">learn more</a></button>
+                <div class="partners">
+                    <img src="client-databiz.svg" >
+                    <img src="client-audiophile.svg" >
+                    <img src="client-meet.svg" >
+                    <img src="client-maker.svg" >
+                </div>
+        </div>
+        <div class="sec2">
+            <img src="image-hero-desktop.png" class="adjust">
+        </div>
+    </section>
+    <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="https://github.com/Front-end-mentorahmed1011" target="_blank">Ahmed wael</a>.
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
